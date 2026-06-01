@@ -1,0 +1,140 @@
+{
+  "version": "1.0",
+  "description": "XHS 卡片模板系统 — 5套模板覆盖6领域",
+  "templates": {
+    "T1_compare": {
+      "name": "对比型",
+      "description": "左右分栏，适合 XX vs YY",
+      "layout": "split_compare",
+      "max_items": 4,
+      "card_style": "split_horizontal",
+      "color_group": "primary"
+    },
+    "T2_list": {
+      "name": "清单型",
+      "description": "编号列表，适合 N个方法/技巧",
+      "layout": "numbered_list",
+      "max_items": 6,
+      "card_style": "numbered_card",
+      "color_group": "primary"
+    },
+    "T3_number": {
+      "name": "数字型",
+      "description": "大数字+说明，适合 3天见效/5步搞定",
+      "layout": "big_number",
+      "max_items": 4,
+      "card_style": "number_highlight",
+      "color_group": "primary"
+    },
+    "T4_scene": {
+      "name": "场景型",
+      "description": "问题→方案叙事，适合 入住酒店后…",
+      "layout": "problem_solution",
+      "max_items": 3,
+      "card_style": "narrative_card",
+      "color_group": "primary"
+    },
+    "T5_myth": {
+      "name": "避坑型",
+      "description": "错误❌→正确✅对比",
+      "layout": "myth_truth",
+      "max_items": 4,
+      "card_style": "myth_card",
+      "color_group": "primary"
+    }
+  },
+  "color_schemes": {
+    "tech_blue": {
+      "label": "AI/科技",
+      "tag": "🤖",
+      "bg_top": [30, 30, 80],
+      "bg_bot": [15, 15, 50],
+      "accent": [100, 200, 255],
+      "card": [255, 255, 255],
+      "card_text": [20, 25, 60],
+      "tag_bg": [100, 200, 255],
+      "tag_text": [10, 20, 50],
+      "num_bg": [255, 180, 50],
+      "num_text": [30, 20, 0],
+      "sub": [180, 210, 255]
+    },
+    "green_minimal": {
+      "label": "轻量化/智能体",
+      "tag": "🧠",
+      "bg_top": [20, 80, 60],
+      "bg_bot": [10, 50, 35],
+      "accent": [120, 220, 160],
+      "card": [255, 255, 255],
+      "card_text": [15, 50, 35],
+      "tag_bg": [120, 220, 160],
+      "tag_text": [10, 40, 25],
+      "num_bg": [50, 160, 100],
+      "num_text": [255, 255, 255],
+      "sub": [180, 230, 200]
+    },
+    "warm_orange": {
+      "label": "哮喘/健康",
+      "tag": "🫁",
+      "bg_top": [200, 120, 60],
+      "bg_bot": [140, 80, 30],
+      "accent": [255, 200, 120],
+      "card": [255, 255, 255],
+      "card_text": [80, 40, 10],
+      "tag_bg": [255, 200, 120],
+      "tag_text": [100, 50, 0],
+      "num_bg": [220, 100, 40],
+      "num_text": [255, 255, 255],
+      "sub": [255, 220, 190]
+    },
+    "deep_blue": {
+      "label": "网安/数据安全",
+      "tag": "🔒",
+      "bg_top": [15, 30, 80],
+      "bg_bot": [8, 15, 50],
+      "accent": [80, 160, 255],
+      "card": [255, 255, 255],
+      "card_text": [15, 30, 70],
+      "tag_bg": [80, 160, 255],
+      "tag_text": [5, 15, 40],
+      "num_bg": [255, 160, 40],
+      "num_text": [40, 20, 0],
+      "sub": [160, 200, 255]
+    },
+    "ink_wash": {
+      "label": "古风（黄历+九字真言）",
+      "tag": "🔮",
+      "bg_top": [60, 45, 20],
+      "bg_bot": [35, 25, 10],
+      "accent": [255, 210, 100],
+      "card": [255, 253, 245],
+      "card_text": [60, 40, 15],
+      "tag_bg": [255, 210, 100],
+      "tag_text": [70, 40, 0],
+      "num_bg": [180, 140, 50],
+      "num_text": [255, 255, 255],
+      "sub": [255, 235, 190]
+    }
+  },
+  "domain_to_scheme": {
+    "AI": "tech_blue",
+    "智能体": "green_minimal",
+    "哮喘": "warm_orange",
+    "安全": "deep_blue",
+    "九字真言": "ink_wash",
+    "老黄历": "ink_wash"
+  },
+  "fonts": {
+    "title_size": 72,
+    "heading_size": 40,
+    "body_size": 30,
+    "small_size": 24,
+    "number_size": 80,
+    "tag_size": 32
+  },
+  "layout": {
+    "canvas": [1080, 1440],
+    "margin": 60,
+    "card_radius": 18,
+    "card_gap": 16
+  }
+}
